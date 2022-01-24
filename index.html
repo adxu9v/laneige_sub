@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        @font-face {
+    font-family: 'Arita-dotum-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+        *{padding: 0; margin: 0; list-style: none; text-decoration: none;
+            font-family: 'Arita-dotum-Medium'}
+        header{width: 100%; height: 60px; border-bottom: 1px solid #ddd; position: relative;}
+        #logo{width: 130px; height: 35px; float: left; margin-left: 55px; margin-top: 12px;}
+        #icon_menu{float: right;  height: 25px; margin-right: 55px; margin-top: 17px; }
+        /* mobile max-widht: 960px */
+        #icon_menu>li{float: left; margin-left: 15px;}
+        #menu{width: 600px; height: 60px; position: absolute; left: 0; right: 0; margin: auto; line-height: 60px; text-align: center;}
+        #menu>li{display: inline-block; margin: 0 5px; font-size: 18px;  position: relative;  cursor: pointer; font-weight: 400;}
+        #menu>li:hover{font-weight: 700;}
+        #menu>li>.menu_line{width: 0%; height: 3px; background-color: #000; position: absolute; left: 0; right: 0; bottom: 0; margin: auto; transition: 0.3s;}
+        #menu>li:hover>.menu_line{width: 100%;}
+        #slide{width: 100%; height: 600px; background: url(images/main_slide1.jpg) center 0 no-repeat; position: relative;}
+        #slide_text{position: absolute; width: 500px; height: 220px; left: 16%; top: 190px; color: #fff; padding: 35px; box-sizing: border-box;}
+        #slide_text>h2{font-size: 45px;}
+        #slide_text>h4{margin-top: 20px; font-size: 20px;}
+        #slide_text>p{margin-top: 10px;}
+        #slide_btbox{width: 300px; height: 50px; position: absolute; left: 0; right: 0; margin: auto; bottom: 20px; line-height: 50px; text-align: center;}
+        #slide_btbox>img{vertical-align: middle;}
+        /* #slide_btbox>*{vertical-align: middle;} */
+        #slide_btbox>ul{display: inline-block; vertical-align: middle;}
+        #slide_btbox>ul>li{width: 10px; height: 10px; background-color: #000; border-radius: 10px; opacity: 0.5; display: inline-block; vertical-align: middle; margin-left: 5px;}
+        #slide_btbox>ul>li:first-child{background-color: transparent; border: 2px solid #000;}
+        #best{overflow: hidden; height: 900px; position: relative; width: 100%; }
+        #best_product{width: 100%; height: 900px; position: absolute; left: 0; top: 0;}
+        #best_product_bg1{width: 100%; height: 460px;  }
+        #best_product_bg2{width: 100%; height: 440px; background-color: white; }
+        #best_product_box{width: 1200px; height: 800px; position: absolute; top: 50px; left: 0; right: 0; margin: auto; text-align: center; overflow: hidden;}
+        #best_product_box>h2{line-height: 100px; font-size: 40px; margin-top: 30px; font-weight: 900;}
+        #best_product_box>ul{}
+        #best_product_box>ul>li{width: 326px; height: 606px; margin: 0 37px; float: left;}
+        .best_product{width: 100%;}
+        #best_product_box>ul>li>h4{color: rgb(138, 169, 255); margin-top: 10px;}
+        #best_product_box>ul>li>h3{margin-top: 10px;}
+        #best_product_box>ul>li>h6{margin-top: 10px; color: #aaa;}
+        #best_product_box>ul>li>p{color: #aaa; margin-top: 5px;}
+        .best_product_icon{margin-top: 20px;}
+        #best_prevbtn{position: absolute; top: 0; bottom: 0; margin: auto; left: 2%; opacity: 0.5;}
+        #best_nextbtn{position: absolute; top: 0; bottom: 0; margin: auto; right: 2%; opacity: 0.5;}
+        #banner{width: 1200px; height: 650px; margin: auto; margin-top: 150px;}
+        #banner>ul>li{width: 314px; height: 640px; margin-top: 5px; margin-left: 66px; margin-right: 20px;   float: left; position: relative;}
+        #banner>ul>li>img{width: 100%;}
+        #banner>ul>li>h3{font-weight: 100; margin-top: 10px;}
+        #banner>ul>li>p{margin-top: 10px; font-weight: 100; color: #aaa;}
+        .banner_rotato{width: 300px; height: 60px; line-height: 60px; position: absolute; left: -175px; top: 120px;  transform: rotate(-90deg); text-align: right; color: rgb(138, 169, 255)}
+        #banner2{width: 1200px; height: 1600px; margin: auto; margin-top: 80px; position: relative;}
+        #banner2_box1{width: 670px; height: 540px;  position: absolute; left: 90px; top: 90px;}
+        #banner2_box2{width: 370px; height: 725px; position: absolute; right: 20px; top: 130px;}
+        #banner2_box3{width: 375px; height: 705px;  position: absolute; left: 60px; bottom: 170px;}
+        #banner2_box4{width: 670px; height: 540px; position: absolute; bottom: 30px; right: 20px;}
+        #banner2 img{width: 100%;}
+        #banner2 h3{margin-top: 10px; font-weight: 100;}
+        #banner2 p{margin-top: 10px;}
+        .banner2_rotate{position: absolute; transform: rotate(-90deg); top: 50px; left: -80px; color: rgb(138, 169, 255);}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="logo">
+            <img src="laneige-logo.svg" alt="">
+        </h1>
+        <ul id="icon_menu">
+            <li>
+                <img src="icons/header-icon_1.png" alt="">
+            </li>
+            <li>
+                <img src="icons/header-icon_2.png" alt="">
+            </li>
+            <li>
+                <img src="icons/header-icon_3.png" alt="">
+            </li>
+        </ul>
+        <ul id="menu">
+            <li>
+                브랜드
+                <div class="menu_line"></div>
+            </li>
+            <li>
+                미츠 아트
+                <div class="menu_line"></div>
+            </li>
+            <li>
+                베스트&신상품
+                <div class="menu_line"></div>
+            </li>
+            <li>
+                스킨케어
+                <div class="menu_line"></div>
+            </li>
+            <li>
+                메이크업
+                <div class="menu_line"></div>
+            </li>
+            <li>
+                옴므
+                <div class="menu_line"></div>
+            </li>
+            <li>
+                이벤트
+                <div class="menu_line"></div>
+            </li>
+        </ul>
+    </header>
+    <div id="slide">
+        <div id="slide_text">
+            <h2>래디언-C크림</h2>
+            <h4>초강력 톤업부스터의 힘으로 피부 코어부터 <br> 맑아지는 비타민 크림</h4>
+            <p>#톤업부스터#빛톤피부</p>
+        </div>
+        <div id="slide_btbox">
+            <img src="icons/main_slide_btn_pre.png" alt="" id="silde_prev_btn">
+            <img src="icons/main_slide_btn_stop.png" alt="" id="slide_stop">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <img src="icons/main_slide_btn.png" alt="" id="slide_next_btn">
+        </div>
+    </div>
+<div id="best">
+    <video src="images/bestseller-bg.mp4" autoplay muted loop></video>
+    <div id="best_product">
+        <div id="best_product_bg1"></div>
+        <div id="best_product_bg2"></div>
+        <div id="best_product_box">
+            <h2>BEST SELLER</h2>
+            <ul>
+                <li>
+                    <img src="images/20200325_final_product_cream-skin_pc.png" alt="" class="best_product">
+                    <h4>CREAM SKIN REFINER</h4>
+                    <h3>크림 스킨</h3>
+                    <img src="icons/KakaoTalk_20220124_141559946.png" alt="" class="best_product_icon">
+                    <p>스킨인데 뛰어난 보습지속력과, 산뜻한 <br> 사용감으로 이만한 스킨은 없는 것 <br> 같아요</p>
+                    <h6>@rabb*********</h6>
+                </li>
+                <li>
+                    <img src="images/20201118_final_neo-cushion-matte_best-seller_pc.png" alt="" class="best_product">
+                    <h4>NEO CUSHION</h4>
+                    <h3>네오 쿠션</h3>
+                    <img src="icons/KakaoTalk_20220124_141559946.png" alt="" class="best_product_icon">
+                    <p>마스크때문에 매트한 쿠션 샀는데 지금까지 썼던 <br> 쿠션 중에 제일 마무리감이 좋았어요.</p>
+                    <h6>@euns*******</h6>
+                </li>
+                <li>
+                    <img src="images/20201118_final_radian-c-cream_best-seller_pc.png" alt="" class="best_product">
+                    <h4>RADIAN-C CREAM</h4>
+                    <h3>래디언-C크림</h3>
+                    <img src="icons/KakaoTalk_20220124_141559946.png" alt="" class="best_product_icon">
+                    <p>벌써 3통째에요! 기미가 고민인 요즘 사용하면 <br> 피부가 밝아지고 확실히 잡티가 옅어지네요~</p>
+                    <h6>@enji********</h6>
+                </li>
+            </ul>
+            <img src="icons/prev-bt.png" alt="" id="best_prevbtn">
+            <img src="icons/next-bt.png" alt="" id="best_nextbtn">
+        </div>
+    </div>
+</div>
+<div id="banner">
+    <ul>
+        <li>
+            <img src="images/20211201_feel_the_glow.jpg" alt="">
+            <h3>FEEL the GLOW</h3>
+            <p>내 피부 본연의 건강한 빛, 내 삶의 빛나는 <br> 자신감</p>
+            <div class="banner_rotato">BRAND STORY</div>
+        </li>
+        <li>
+            <img src="images/20220105_final_Radian-C-Cream_main_Best-Seller_pc.jpg" alt="">
+            <h3>래디언-C 크림</h3>
+            <p>초강력 톤업부스터의 힘으로 피부 코어부터 <br> 맑아지는 비타민 크림</p>
+            <div class="banner_rotato">BEST SELLER</div>
+        </li>
+        <li>
+            <img src="images/20210601_final_main_thumbnail_lifestyle-test.png" alt="">
+            <h3><내가 크리에이터라면?>참여하기</h3>
+            <p>라이프스타일로 알아보는 크리에이터 유형 <br> 테스트</p>
+            <div class="banner_rotato">LIFESTYLE TEST</div>
+        </li>
+    </ul>
+</div>
+<div id="banner2">
+    <div id="banner2_box1">
+        <img src="images/20210406_final_radian-c-vitamin-spot-ampoule_sub-banner_pc.jpg" alt="">
+        <h3>피토알렉신 수분진정 토너</h3>
+        <p>매일 자극받는 피부를 케어해주는 민감 진정 수분 토너</p>
+        <div class="banner2_rotate">NEW ARRIVALS</div>
+    </div>
+    <div id="banner2_box2">
+        <img src="images/20201104_final_flagship-store_banner_pc.jpg" alt="">
+        <h3>명동 쇼룸</h3>
+        <p>편안하게 제품을 체험하고 브랜드를 경험할 수 있는 <br> 라네즈 브랜드 공간</p>
+        <div class="banner2_rotate">FLAGSHIP STORE</div>
+    </div>
+    <div id="banner2_box3">
+        <img src="images/20201130_final_laneige_main-thumbnail_best-seller.jpg" alt="">
+        <h3>네오 쿠션</h3>
+        <p>함부로 묻지 않게, 네오로 밀착</p>
+        <div class="banner2_rotate">BEST SELLER</div>
+    </div>
+    <div id="banner2_box4">
+        <img src="images/20210811_final_NEO-foundation-matte_main_sub_banner_1.jpg" alt="">
+        <h3>네오 파운데이션</h3>
+        <p>얇고 촘촘한 구름결 커버</p>
+        <div class="banner2_rotate">NEW ARRIVALS</div>
+    </div>
+</div>
+</body>
+</html>
