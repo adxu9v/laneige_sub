@@ -59,27 +59,61 @@
         #main2_box>ul>li>h5{font-size: 10px; margin-top: 20px; font-weight: 100;}
         #main2_box>ul>li>p{font-size: 10px; margin-top: 10px; font-weight: 100;}
         #main2_interview{color: #aaa; position: absolute; bottom: -2.5%;right: 20%; font-size: 80px; font-weight: 900; opacity: 0.3; z-index: 99;}
-        #banner1{width: 100%; height: 410px; background-color: #f6f6f8; position: relative;}
-        #banner1_img{ width: 500px; position: absolute; left: 0; bottom: 0;}
-        #banner1_img>img{width: 100%; vertical-align: top;}
-        #banner1_p{height: 100%; width: 100%; position: absolute; left: 100%; top: 0;}
-        #banner1_p>h2{font-size: 10px; font-weight: 100; margin-top: 40px;}
-        #banner1_p>p{font-size: 12px; margin-top: 10px; color: #666;}
-        #banner2{width: 100%; height: 600px; background-color: #eceaf4;}
-        #banner2_p{float: left;   box-sizing: border-box;}
-        #banner2_p>h2{font-size: 10px; font-weight: 100; margin-top: 40px;}
-        #banner2_p>p{font-size: 12px; margin-top: 10px; color: #666;}
-        #banner2_img{width: 280px; height: 380px;}
-        #banner2_img>img{width: 100%;}
-        footer{width: 100%; height: 250px; background-color: #eee; margin-top: 100px;}
+        #banner1{width: 100%; background-color: #f6f6f8; }
+        #banner1_box{ max-width: 1280px; width: 100%; overflow: hidden; border: 1px solid #000; margin: auto; position: relative;}
+        #banner1_img_box{width: 35%; border: 1px solid #000; max-width: 800px; float: left; margin-left: 5%; position: absolute; left: 0; bottom: 0;}
+        #banner1_img_box>img{width: 100%; vertical-align: top;}
+        #banner1_p{float: right; width: 45%;}
+        #banner1_p>h2{font-size: 1vw; font-weight: 100; margin-top: 40px;}
+        #banner1_p>p{font-size: 1vw; margin-top: 10px; color: #aaa;}
+        /* #banner_bg{width: 100%; height: 2000px; background: url(meets-art/interview02_bg.jpg) 0 center no-repeat; background-size: cover;} */
+        #banner_bg{width: 100%; height: 1600px; background: #aaa;  background: url(meets-art/interview02_bg.jpg)  center no-repeat; background-size: cover;}
+        #banner_bg>img{width: 100%;}
+        #banner2{width: 100%; overflow: hidden;}
+        #banner2_box{max-width: 1080px; width: 100%; margin: auto; }
+        #banner2_p{float: left;margin-top: 150px; margin-left: 5%; width: 50%;}
+        #banner2_p>h2{font-size: 1vw; font-weight: 100; margin-top: 10px;}
+        #banner2_p>p{font-size: 1vw; margin-top: 10px; color: #666;}
+        #banner2_video{float: right; width: 30%; margin-top: 80px;  text-align: center; margin-right: 5%;}
+        #banner2_video>video{width: 100%; vertical-align: top;}
+        #banner3{width: 100%; margin-top: 100px;}
+        #banner3_box{width: 100%; margin: auto; }
+        #banner3_video{width: 48%; min-width: 343px; float: left; }
+        #banner3_video>video{width: 100%;}
+        #banner3_p{float: right; width: 47%; margin-top: 20px;}
+        #banner3_p>h2{font-size: 1vw; font-weight: 100; margin-top: 10px;}
+        #banner3_p>p{font-size: 1vw;  color: #666; margin-top: 5px;}
+
+        #art{width: 100%; text-align: center; margin-top: 100px;}
+        #art>h2{font-size: 60px; font-weight: 900; color: #c07fc0;}
+        #art>h3{font-size: 50px; line-height: 50px; color: #c07fc0;}
+        .art_line{width: 40px; height: 4px; background-color: #aaa; margin: auto; margin-top: 5px;}
+        #art_p{margin-top: 10px; font-size: 12px; color: #666; font-weight: 100;}
+        #art_list{width: 100%; max-width: 1320px; overflow: hidden; margin: auto; margin-top: 30px;}
+        #art_list>ul>li{margin-right: 2%; width: 23.5%; float: left; cursor: pointer;}
+        #art_list>ul>li>img{width: 100%;}
+        #art_list>ul>li:nth-child(4n){margin-right: 0;}
+        #art_list>ul>li>p{margin: 10px 0px 30px; font-weight: 100;}
+        #art2{width: 100%;}
+        #art2_box{text-align: center; width: 100%; max-width: 1000px; margin: auto;}
+        #art2_box>h2{font-size: 60px; font-weight: 900; color: #b0acdd;}
+        #art2_box>h3{font-size: 50px; line-height: 50px; color: #b0acdd;}
+        #art2_box>p{margin-top: 10px; font-size: 12px; color: #666; font-weight: 100;}
+        #art2_list{width: 100%; max-width: 1000px; overflow: hidden; margin: auto; margin-top: 30px;}
+        #art2_list>ul{}
+        #art2_list>ul>li{margin-right: 2%; width: 32%; float: left; cursor: pointer;}
+        #art2_list>ul>li:last-child{margin-right: 0;}
+        #art2_list>ul>li>img{width: 100%;}
+        footer{width: 100%; background-color: #eee; margin-top: 160px;  overflow: hidden;}
+        #footer2_box{width: 1200px; height: 100%;  margin: auto;}
         #footer1{width: 100%; height: 50px; border-top: 1px solid #000; border-bottom: 1px solid #000;}
         #footer1_box{width: 1200px; height: 25px; line-height: 25px; margin: auto;  margin-top: 12px;}
         #footer1_box_left>li{float: left; margin-left: 30px;}
         #footer1_box_left>li:nth-child(4){font-weight: 900;}
         #footer1_box_right{float: right;}
         #footer1_box_right>li{float: left; margin-right: 20px;}
-        #footer2{width: 1200px; height: 200px; margin: auto; }
-        #footer2_left{width: 620px; height: 120px; margin-top: 10px; float: left; }
+        #footer2{width: 1200px; height: 200px; }
+        #footer2_left{width: 620px; height: 120px; margin-top: 10px;  float: left; }
         #footer2_right{width: 260px; height: 40px; margin-top: 20px; float: right; }
         #footer2_right>select{padding: 10px 60px 10px 10px;}
         #footer2_left>p{  font-size: 15px; float: left; margin-top: 20px;}
@@ -201,7 +235,11 @@
     </div>
 </div>
 <div id="banner1">
-    <div id="banner1_img"><img src="meets-art/interview01.png" alt=""><div id="banner1_p">
+    <div id="banner1_box">
+        <div id="banner1_img_box">
+            <img src="meets-art/interview01.png" alt="">
+        </div>
+        <div id="banner1_p">
         <h2>Q. 두 분 작품을 선보이게 되어 영광입니다. 한국 관람객 여러분을 위해 간단하게 <br>
             인사와 자기소개를 부탁드립니다.</h2>
         <p>안녕하세요. 저희는 제시카 월시, 스테판 사그마이스터라고 합니다. 사그마이스터 앤 <br>
@@ -217,23 +255,132 @@
                 낼 수 있기 때문이죠. 두 사람 모두 실제 경험을 토대로 디자인 작업을 이끌어나가는 <br>
                 편입니다. 불특정 사용자를 대상으로 하여 진행하는 테스트나 평가보다는 경험을 더 신뢰하죠.</p>
     </div>
-    </div>
 </div>
-<div id="banner2">
-    <div id="banner2_p">
+</div>
+<div id="banner_bg">
+    <div id="banner2">
+    <div id="banner2_box">
+        <div id="banner2_p">
         <h2>
             Q. 한국에는 아직 타이포그래피라는 말이 낯선 분도 있을 것 같은데요. <br>
 타이포그래피가 무엇인지 간단하게 설명 부탁드려도 될지요?
         </h2>
-        <p>타이포그래피는 디자인과 공예 개념을 접목하여 글자, 활자 서체를
+        <p>타이포그래피는 디자인과 공예 개념을 접목하여 글자, 활자 서체를 <br>
             표현하는 기술입니다.</p>
+            <h2>Q. 글자 하나하나에 의미를 담는 작업을 진행하셨는데, <br>
+                라네즈(Laneige)라는 이름에선 어떤 인상을 받으셨나요?</h2>
+            <p>영어를 쓰는 사람으로서 참 아름다운 말이라고 생각합니다. Laneige라는 <br>
+                소리와 그 말을 이루는 글자에서 우러나오는 신비한 느낌이 워낙 강렬해서 <br>
+                몹시 즐거운 마음으로 작업에 임할 수 <br> 있었습니다. 글자마다 개성이 워낙 <br>
+                뚜렷하다 보니 별다른 어려움 없이 글자별로  관람객에게 색다른 경험을 <br>
+                선사할 수 있었다고 생각합니다. 저희는 라네즈 팀에서 공유해주신 로고와 <br>
+                모노그램, 브랜드 색상을 보자마자 그 간결한 디자인과 우아한 분위기에 <br>
+                흠뻑 빠져들었습니다. 워드마크는 단순미가 있는 동시에 현대적 감각이 <br>
+                두드러지고 자신감이 넘칩니다. 라네즈라는 브랜드의 이미지에는 사람을 <br>
+                끌어당기는 힘이 있습니다. 덕분에 두 사람 모두 기쁘게 프로젝트를 <br>
+                진행할 수 있었습니다.
+                </p>
+
+        </div>
+        <div id="banner2_video">
+            <video src="meets-art/KakaoTalk_20220127_172127651.mp4" muted autoplay loop>
+
+            </video>
+        </div>
     </div>
-<!-- <div id="banner2_img">
-    <img src="meets-art/vdo_05_Holiday.jpg" alt="">
-</div> -->
+</div>
+<div id="banner3">
+    <div id="banner3_box">
+        <div id="banner3_video">
+            <video src="meets-art/KakaoTalk_20220127_172125954.mp4" muted autoplay loop>
+            </video>
+        </div>
+        <div id="banner3_p">
+            <h2>Q. 물의 아름다움을 표현하는 과정에서 특히 힘들었던 부분을 꼽자면?</h2>
+            <p>물을 표현할 때 가장 중점을 둔 요소는 바로 물의 움직임이었습니다. 순수하다거나 <br>
+                투명하다는 점뿐만 아니라 형태가 다양하다는 점 역시 물의 중요한 특성입니다. <br>
+                저희는 심혈을 기울여 물의 다채로운 움직임과 속성, 그리고 모양을 표현했습니다. <br>
+                극도의 정밀함과 고도의 디자인 능력을 요하는 일이었죠.</p>
+                <h2>Q. 밀레니얼 세대는 지나치다 싶을 정도로 많은 컨텐츠, 특히 시각 컨텐츠를 소비합니다. 관람객이 어떤 태도와 마음가짐으로 작품을 <br> 감상하면 좋을까요? 조언 부탁드립니다.</h2>
+                <p>앞에서도 말씀 드렸지만 이 작품들은 소셜 미디어 플랫폼에 흔히 올라오는 영상과는 차원이 다릅니다. 심심풀이 삼아 찾아보는 영상도 <br> 아닐뿐더러, 정보만 제공하는 영상도 아닙니다. 이 프로젝트는 오감을 총동원하고 신경을 곤두세워 집중해야 할 만큼 아름다운 경험을 <br> 선사한다는 데 의의가 있습니다. 밀레니얼 세대가 저희 프로젝트를 관람한다면 일반적인 동영상 소비 패턴에서 벗어나 작품을 하나씩 <br> 찬찬히 음미하며 나만의 것을 경험해보시길 바랍니다.</p>
+        </div>
+    </div>
+</div>
+</div>
+<div id="art">
+    <h2>2020</h2>
+    <h3>DIGITAL ARTWORK</h3>
+    <div class="art_line"></div>
+    <p id="art_p">2020년 코로나 이슈로 우리 일상의 많은 부분이 디지털로 빠르게 전환 되었습니다. <br>
+        라네즈는 사그마이스터앤월시(Sagmeister&Walsh)와의 디지털 아트 콜라보레이션을 통해 <br>
+        건강하게 빛나는 삶을 응원하는 브랜드 메시지를 전달했습니다.</p>
+        <div id="art_list">
+            <ul>
+                <li>
+                    <img src="meets-art/youtube2020_logo.jpg" alt="">
+                    <p>LOGO</p>
+                </li>
+                <li>
+                    <img src="meets-art/youtube2020_monogram.jpg" alt="">
+                    <p>MONOGRAM</p>
+                </li>
+                <li>
+                    <img src="meets-art/youtube2020_water.jpg" alt="">
+                    <p>WATER</p>
+                </li>
+                <li>
+                    <img src="meets-art/youtube2020_waterbankessence.jpg" alt="">
+                    <p>WATERBANK ESSENCE</p>
+                </li>
+                <li>
+                    <img src="meets-art/youtube2020_moisture.jpg" alt="">
+                    <p>MOISTURE</p>
+                </li>
+                <li>
+                    <img src="meets-art/youtube2020_luminous.jpg" alt="">
+                    <p>LUMINOUS</p>
+                </li>
+                <li>
+                    <img src="meets-art/youtube2020_glow.jpg" alt="">
+                    <p>GLOW</p>
+                </li>
+                <li>
+                    <img src="meets-art/youtube2020_holiday.jpg" alt="">
+                    <p>HOLIDAY</p>
+                </li>
+            </ul>
+        </div>
+</div>
+<div id="art2">
+    <div id="art2_box">
+        <h2>2021</h2>
+        <h3>DIGITAL ARTWORK</h3>
+        <div class="art_line"></div>
+        <p>2021년에는 사그마이스터앤월시(Sagmeister&Walsh)가 새로운 관점으로 재해석한 <br>
+            라네즈 베스트셀링 제품을 디지털 아트에 담아 내었습니다. <br>
+            제품 고유의 스토리와 주목해야할 속성, 브랜드가 제품을 통해 전하고자 하는 메시지 등을 <br>
+            예술적 관점으로 신선하게 풀어내어 고객에게 즐거운 경험을 전달합니다.</p>
+        <div id="art2_list">
+            <ul>
+                <li>
+                    <img src="meets-art/youtube2021_wsm.jpg" alt="">
+                    <p>#WSM</p>
+                </li>
+                <li>
+                    <img src="meets-art/youtube2021_waterbank.jpg" alt="">
+                    <p>#Waterbank</p>
+                </li>
+                <li>
+                    <img src="meets-art/youtube2021_neocushion.jpg" alt="">
+                    <p>#NEO Cushion</p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 <footer>
-    <div id="footer1">
+    
+        <div id="footer2_box"><div id="footer1">
         <div id="footer1_box">
             <ul id="footer1_box_left">
                 <li>회사소개</li>
@@ -275,7 +422,8 @@
                     <option value="">CANADA/ENGLISH</option>
                     <option value="">UNITED STATES/ENGLISH</option>
                 </select>
-        </div>
+        </div></div>
+        
     </div>
 </footer>
 </body>
